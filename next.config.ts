@@ -1,7 +1,33 @@
-import type { NextConfig } from "next";
+import { createMDX } from "fumadocs-mdx/next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const withMDX = createMDX();
+
+const nextConfig = {
+    pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
+    outputFileTracingIncludes: {
+        "/**": ["components/codesnippetui/**/*"],
+    },
+    async headers() {
+        return [
+            {
+                source: "/r/:path*",
+                headers: [
+                    {
+                        key: "Cache-Control",
+                        value: "public, max-age=31536000, immutable",
+                    },
+                ],
+            },
+        ];
+    },
+    images: {
+        remotePatterns: [
+            {
+                hostname: "*",
+            },
+        ],
+    },
+    reactStrictMode: true,
 };
 
-export default nextConfig;
+export default withMDX(nextConfig);

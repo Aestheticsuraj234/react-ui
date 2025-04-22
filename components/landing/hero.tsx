@@ -1,0 +1,241 @@
+"use client";
+
+import type React from "react";
+
+import Link from "next/link";
+import TailwindCSS from "@/components/icons/tailwindcss";
+import { motion } from "motion/react";
+
+import {
+  PlaneTakeoff,
+  BarChart2,
+  Video,
+  AudioLines,
+  Globe,
+  Diamond,
+  Sparkles,
+  Code,
+  Layers,
+} from "lucide-react";
+import { Btn14 } from "../codesnippetui/button/btn-14";
+import Btn03 from "../codesnippetui/button/btn-03";
+import Input09 from "../codesnippetui/input/input-09";
+import AIInput_04 from "../codesnippetui/ai-input/ai-input-04";
+import ActionSearchBar from "../codesnippetui/action-search-bar";
+import Card08 from "../codesnippetui/card/card-08";
+
+interface Action {
+  id: string;
+  label: string;
+  icon: React.ReactNode;
+  description?: string;
+  short?: string;
+  end?: string;
+}
+
+const allActions: Action[] = [
+  {
+    id: "1",
+    label: "Book tickets",
+    icon: <PlaneTakeoff className="h-4 w-4 text-emerald-500" />,
+    description: "Operator",
+    short: "⌘K",
+    end: "Agent",
+  },
+  {
+    id: "2",
+    label: "Summarize",
+    icon: <BarChart2 className="h-4 w-4 text-pink-500" />,
+    description: "gpt-4o",
+    short: "⌘cmd+p",
+    end: "Command",
+  },
+  {
+    id: "3",
+    label: "Screen Studio",
+    icon: <Video className="h-4 w-4 text-purple-500" />,
+    description: "gpt-4o",
+    short: "",
+    end: "Application",
+  },
+  {
+    id: "4",
+    label: "Talk to Jarvis",
+    icon: <AudioLines className="h-4 w-4 text-pink-500" />,
+    description: "DeepSeek",
+    short: "",
+    end: "Active",
+  },
+  {
+    id: "5",
+    label: "Translate",
+    icon: <Globe className="h-4 w-4 text-emerald-500" />,
+    description: "Gemini",
+    short: "",
+    end: "Command",
+  },
+];
+
+export function HeroSection() {
+  return (
+    <div className="mx-auto w-full max-w-7xl min-h-screen flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 px-4 sm:px-6 py-12 md:py-16 lg:py-20">
+      {/* Left side - Title and CTA */}
+      <div className="w-full lg:w-[45%] flex flex-col items-start text-left space-y-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] text-zinc-900 dark:text-zinc-100">
+            Craft with{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-500 via-fuchsia-500 to-purple-500 dark:from-rose-400 dark:via-fuchsia-400 dark:to-purple-400">
+              precision
+            </span>
+            <br />
+            build with{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-fuchsia-500 to-rose-500 dark:from-purple-400 dark:via-fuchsia-400 dark:to-rose-400">
+              ease
+            </span>
+            .
+          </h1>
+          <p className="mt-6 text-base md:text-xl text-zinc-700 dark:text-zinc-300 max-w-lg">
+            A curated collection of{" "}
+            <span className="font-semibold">100+ premium UI components</span>{" "}
+            crafted with{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-fuchsia-500 dark:from-rose-400 dark:to-fuchsia-400">
+              Tailwind CSS
+            </span>{" "}
+            and{" "}
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-500 to-purple-500 dark:from-fuchsia-400 dark:to-purple-400">
+              shadcn/ui
+            </span>{" "}
+            for modern React and Next.js applications.
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="flex flex-col justify-start w-full"
+        >
+          <span className="text-sm text-zinc-500 dark:text-zinc-300 pb-3 text-start flex items-center gap-2">
+            <TailwindCSS className="w-4 h-4" />
+            <span className="flex items-center gap-1.5">
+              Now updated for Tailwind CSS 4.0!
+              <span className="inline-flex items-center rounded-md bg-purple-50 dark:bg-purple-900/30 px-2 py-1 text-xs font-medium text-purple-700 dark:text-purple-300">
+                <Sparkles className="h-3 w-3 mr-1" />
+                New
+              </span>
+            </span>
+          </span>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-3">
+            {/* <BrowseComponentsButton />
+            <BrowseBlocksButton /> */}
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="flex flex-wrap gap-3 pt-2"
+        >
+          <div className="flex items-center gap-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800 px-3 py-1.5 text-sm text-zinc-700 dark:text-zinc-300">
+            <Code className="h-3.5 w-3.5" />
+            React
+          </div>
+          <div className="flex items-center gap-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800 px-3 py-1.5 text-sm text-zinc-700 dark:text-zinc-300">
+            <Layers className="h-3.5 w-3.5" />
+            Next.js
+          </div>
+          <div className="flex items-center gap-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800 px-3 py-1.5 text-sm text-zinc-700 dark:text-zinc-300">
+            <Diamond className="h-3.5 w-3.5" />
+            TypeScript
+          </div>
+        </motion.div>
+
+        {/* <FeatureBlock /> */}
+      </div>
+
+      {/* Right side - Components Layout */}
+      <div className="w-full lg:w-[55%] flex flex-col justify-between gap-6 lg:pl-8">
+        {/* Top row: Card + Action Search Bar */}
+        <motion.div
+          initial={{ opacity: 0, y: -20, scale: 0.95 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center"
+        >
+          {/* Card component */}
+          <div className="w-full flex flex-col items-center justify-center ">
+                        <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
+                            {"<Card/>"}
+                        </span>
+                        <Card08 href="/docs/components/card" />
+                    </div>
+
+          {/* Action Search Bar */}
+          <div className="w-full bg-transparent">
+                        <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
+                            Components
+                        </span>
+                        <ActionSearchBar
+                            actions={allActions}
+                            defaultOpen={true}
+                        />
+                    </div>
+        </motion.div>
+
+        {/* Middle row: AI Chat */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="w-full"
+        >
+          <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
+            AI Chat
+          </span>
+          {/* <AIInput_04 /> */}
+          <div className="w-full h-48 rounded-xl border border-zinc-200 dark:border-zinc-800 flex items-center justify-center">
+          <AIInput_04 />
+          </div>
+        </motion.div>
+
+        {/* Bottom row: Buttons on left, Input on right */}
+        <motion.div
+          initial={{ opacity: 0, y: 20, scale: 0.95 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="w-full grid grid-cols-1 md:grid-cols-2 gap-6"
+        >
+          {/* Left side - Buttons */}
+          <div className="w-full">
+            <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
+              Buttons
+            </span>
+            <div className="w-full h-48 rounded-xl  border border-zinc-200 dark:border-zinc-800 flex flex-col items-center justify-center gap-3">
+              <Link href="/docs/components/button">
+                <Btn14 label="Bring me" className=" w-42 py-5" />
+              </Link>
+              <Link href="/docs/components/button">
+                <Btn03 className=" w-42 py-5" />
+              </Link>
+            </div>
+          </div>
+
+          {/* Right side - Input */}
+          <div className="w-full">
+            <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
+              Input
+            </span>
+            <Link href="/docs/components/input">
+              <Input09 />
+            </Link>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
+}
