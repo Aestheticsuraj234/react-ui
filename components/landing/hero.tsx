@@ -23,6 +23,9 @@ import Input09 from "../codesnippetui/input/input-09";
 import AIInput_04 from "../codesnippetui/ai-input/ai-input-04";
 import ActionSearchBar from "../codesnippetui/action-search-bar";
 import Card08 from "../codesnippetui/card/card-08";
+import { BrowseBlocksButton } from "../ui/browse-blocks";
+import { BrowseComponentsButton } from "../ui/browse-button";
+import Features from "./feature-block";
 
 interface Action {
   id: string;
@@ -130,32 +133,15 @@ export function HeroSection() {
             </span>
           </span>
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-3">
-            {/* <BrowseComponentsButton />
-            <BrowseBlocksButton /> */}
+            <BrowseComponentsButton />
+            <BrowseBlocksButton />
           </div>
+
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-wrap gap-3 pt-2"
-        >
-          <div className="flex items-center gap-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800 px-3 py-1.5 text-sm text-zinc-700 dark:text-zinc-300">
-            <Code className="h-3.5 w-3.5" />
-            React
-          </div>
-          <div className="flex items-center gap-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800 px-3 py-1.5 text-sm text-zinc-700 dark:text-zinc-300">
-            <Layers className="h-3.5 w-3.5" />
-            Next.js
-          </div>
-          <div className="flex items-center gap-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800 px-3 py-1.5 text-sm text-zinc-700 dark:text-zinc-300">
-            <Diamond className="h-3.5 w-3.5" />
-            TypeScript
-          </div>
-        </motion.div>
 
-        {/* <FeatureBlock /> */}
+
+        <Features />
       </div>
 
       {/* Right side - Components Layout */}

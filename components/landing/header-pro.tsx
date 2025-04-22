@@ -25,13 +25,13 @@ export function HeaderPro() {
       setContent({
         text: "Built app fast",
         productName: "Kokonut Boilerplate",
-        link: "https://kokonut.dev?utm_source=kokonutui.com&utm_medium=header",
+        link: "https://kokonut.dev?utm_source=codesnippetui.com&utm_medium=header",
       });
     } else {
       setContent({
         text: "Explore new components",
         productName: "Kokonut UI Pro",
-        link: "https://kokonutui.pro?utm_source=kokonutui.com&utm_medium=header",
+        link: "https://codesnippetui.pro?utm_source=codesnippetui.com&utm_medium=header",
       });
     }
   }, []);
@@ -76,7 +76,7 @@ export function HeaderPro() {
           </div>
         </Link>
         <Link
-          href="https://github.com/kokonut-labs/kokonutui"
+          href="https://github.com/kokonut-labs/codesnippetui"
           target="_blank"
           className="hidden group relative md:inline-flex items-center gap-2 px-1.5 py-1.5 text-sm rounded-lg bg-zinc-900 dark:bg-zinc-100 transition-colors hover:bg-zinc-800 dark:hover:bg-zinc-200"
         >

@@ -15,7 +15,7 @@ interface ProjectLink {
 export function Footer() {
   const projectLinks: ProjectLink[] = [
     {
-      href: "https://kokonut.dev/?utm_source=kokonutui.com&utm_medium=footer",
+      href: "https://kokonut.dev/?utm_source=codesnippetui.com&utm_medium=footer",
       text: "Kokonut.dev",
       description:
         "Next.js boilerplate that contains all the essentials for launching your SaaS, AI apps, online business and get your first $",
@@ -24,14 +24,14 @@ export function Footer() {
       isNew: true,
     },
     {
-      href: "https://kokonutui.pro?utm_source=kokonutui.com&utm_medium=footer",
-      text: "KokonutUI - PRO",
+      href: "https://codesnippetui.pro?utm_source=codesnippetui.com&utm_medium=footer",
+      text: "codesnippetui - PRO",
       description: "Premium UI Components to ship apps faster",
       icon: "/logo.svg",
       iconDark: "/logo-black.svg",
     },
     {
-      href: "https://arca.directory/?utm_source=kokonutui.com&utm_medium=footer",
+      href: "https://arca.directory/?utm_source=codesnippetui.com&utm_medium=footer",
       text: "Arca Directory",
       description:
         "Find and share the best tools for developers, designers and entrepreneurs.",
@@ -58,7 +58,7 @@ export function Footer() {
               <span className="text-sm">Twitter</span>
             </Link>
             <Link
-              href="https://github.com/kokonut-labs/kokonutui"
+              href="https://github.com/kokonut-labs/codesnippetui"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white transition-colors"

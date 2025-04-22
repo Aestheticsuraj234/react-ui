@@ -17,8 +17,8 @@ const defaultProfile = {
     role: "Product Designer",
     avatar: "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-02-albo9B0tWOSLXCVZh9rX9KFxXIVWMr.png",
     location: "San Francisco, CA",
-    email: "hello@kokonutui.com",
-    website: "https://kokonutui.com/",
+    email: "hello@codesnippetui.com",
+    website: "https://codesnippetui.com/",
     bio: "Designing interfaces that bridge the gap between complexity and simplicity.",
 } satisfies Required<Profile02Props>;
 

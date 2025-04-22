@@ -169,7 +169,7 @@ export default function Profile05({
                                         <div className="flex items-center gap-2">
                                             {member.social.github && (
                                                 <a
-                                                    href="https://github.com/kokonut-labs/kokonutui"
+                                                    href="https://github.com/kokonut-labs/codesnippetui"
                                                     target="_blank"
                                                     className="p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-500 dark:text-zinc-400"
                                                 >

@@ -20,7 +20,7 @@ const defaultProfile = {
     role: "Making apps",
     avatar: "https://ferf1mheo22r9ira.public.blob.vercel-storage.com/avatar-04-uuYHWIRvVPi01gEt6NwnGyjqLeeZhz.png",
     subscription: "Maker",
-    email: "hello@kokonutui.com",
+    email: "hello@codesnippetui.com",
     level: 42,
     currentExp: 2800,
     maxExp: 4000,

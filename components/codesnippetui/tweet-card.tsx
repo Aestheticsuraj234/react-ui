@@ -28,7 +28,7 @@ export default function TweetCard({
     authorHandle = "dorian_baffier",
     authorImage = "https://pbs.twimg.com/profile_images/1854916060807675904/KtBJsyWr_400x400.jpg",
     content = [
-        "All components from KokonutUI can now be open in @v0 🎉",
+        "All components from codesnippetui can now be open in @v0 🎉",
         "1. Click on 'Open in V0'",
         "2. Customize with prompts",
         "3. Deploy to your app",
