@@ -78,7 +78,7 @@ function ElegantShape({
 }
 
 export default function HeroGeometric({
-    badge = "Kokonut UI",
+    badge = "CodeSnippet UI",
     title1 = "Elevate Your",
     title2 = "Digital Vision",
 }: {
@@ -161,7 +161,7 @@ export default function HeroGeometric({
                     >
                         <Image
                             src="https://codesnippetui.com/logo.svg"
-                            alt="Kokonut UI"
+                            alt="CodeSnippet UI"
                             width={20}
                             height={20}
                         />

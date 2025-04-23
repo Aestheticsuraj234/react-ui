@@ -45,10 +45,10 @@ const defaultProps: Card01Props = {
         timeAgo: "2h ago",
     },
     content: {
-        text: "Just launched Kokonut UI! Check out the documentation and let me know what you think 🎨",
+        text: "Just launched CodeSnippet UI! Check out the documentation and let me know what you think 🎨",
         link: {
-            title: "Kokonut UI Documentation",
-            description: "A comprehensive guide to Kokonut UI",
+            title: "CodeSnippet UI Documentation",
+            description: "A comprehensive guide to CodeSnippet UI",
             icon: <LinkIcon className="w-5 h-5 text-blue-500" />,
         },
     },

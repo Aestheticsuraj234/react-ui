@@ -58,6 +58,10 @@ export default async function PreviewPage({
             <Component />
         );
     } catch (error) {
+        console.error("Error loading component:", error);
+        // Handle the error gracefully
+        // You can return a fallback UI or a not found page
+        // For example, you can return a simple message or a custom 404 component
         return notFound();
     }
 }

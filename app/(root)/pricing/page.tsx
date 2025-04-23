@@ -23,12 +23,12 @@ import { Card } from "@/components/ui/card";
 import V0 from "@/components/icons/v0";
 import TailwindCSS from "@/components/icons/tailwindcss";
 import Motion from "@/components/icons/motion";
-import { useActionState, useState, useRef } from "react";
+import { useActionState, useState } from "react";
 import {
     Dialog,
     DialogContent,
     DialogDescription,
-    DialogFooter,
+  
     DialogHeader,
     DialogTitle,
 } from "@/components/ui/dialog";
@@ -320,12 +320,12 @@ export default function PricingPage() {
                         className="mx-auto max-w-2xl space-y-6"
                     >
                         <p className="text-xl text-gray-600 dark:text-gray-300">
-                            We've got you covered. Choose custom components or a
+                            We have got you covered. Choose custom components or a
                             complete page.
                         </p>
                         {/* <p className="text-sm text-gray-500 dark:text-gray-400">
                             Join hundreds of developers building amazing projects
-                            with Kokonut UI
+                            with CodeSnippet UI
                         </p> */}
                     </motion.div>
                 </div>

@@ -173,7 +173,7 @@ export function BackgroundCircles({
                 >
                     {description}
                     <span className="mx-3 opacity-50">·</span>
-                    Kokonut UI
+                    CodeSnippet UI
                 </motion.p>
             </motion.div>
 

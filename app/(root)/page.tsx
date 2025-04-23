@@ -3,7 +3,7 @@ import { ComponentShowcaseCard } from "@/components/landing/component-showcase-c
 import { HeroSection } from "@/components/landing/hero";
 import { InteractivePreview } from "@/components/landing/interactive-preview";
 import { BuildInterfacesCard } from "@/components/landing/interfaceCards";
-import { ShowcaseSection } from "@/components/landing/showcase";
+
 import { TechnologyBadges } from "@/components/landing/technology-badges";
 
 export default function Home() {

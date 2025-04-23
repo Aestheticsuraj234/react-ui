@@ -5,8 +5,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: {
-        template: "%s | Kokonut UI - Open Source Components",
-        default: "Kokonut UI - Open Source Components",
+        template: "%s | CodeSnippet UI - Open Source Components",
+        default: "CodeSnippet UI - Open Source Components",
     },
 };
 

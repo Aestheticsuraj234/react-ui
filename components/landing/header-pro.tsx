@@ -30,7 +30,7 @@ export function HeaderPro() {
     } else {
       setContent({
         text: "Explore new components",
-        productName: "Kokonut UI Pro",
+        productName: "CodeSnippet UI Pro",
         link: "https://codesnippetui.pro?utm_source=codesnippetui.com&utm_medium=header",
       });
     }
@@ -45,7 +45,7 @@ export function HeaderPro() {
           className="flex items-center justify-end gap-2 pl-2 pr-0.5 py-1 text-sm font-medium text-zinc-800 dark:text-zinc-200 rounded-xl border-2 border-orange-500/20 hover:border-orange-500/60 transition-all duration-300 group hover:shadow-md"
         >
           <span className="hidden md:flex items-center gap-2">
-            {content.productName === "Kokonut UI Pro" ? (
+            {content.productName === "CodeSnippet UI Pro" ? (
               <ConfettiOutline className="w-4 h-4 text-orange-500" />
             ) : (
               <Rocket className="w-4 h-4 text-orange-500" />
@@ -56,7 +56,7 @@ export function HeaderPro() {
           </span>
 
           <span className="flex md:hidden items-center gap-2">
-            {content.productName === "Kokonut UI Pro" ? (
+            {content.productName === "CodeSnippet UI Pro" ? (
               <PartyPopper className="w-4 h-4 text-orange-500" />
             ) : (
               <Rocket className="w-4 h-4 text-orange-500" />

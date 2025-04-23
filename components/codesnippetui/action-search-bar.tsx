@@ -7,11 +7,11 @@ import {
     Search,
     Send,
     BarChart2,
-    Globe,
+   
     Video,
     PlaneTakeoff,
     AudioLines,
-    Layout,
+   
     LayoutGrid,
 } from "lucide-react";
 import useDebounce from "@/hooks/use-debounce";
@@ -64,7 +64,7 @@ const allActionsSample = [
     },
     {
         id: "5",
-        label: "Kokonut UI - Pro",
+        label: "CodeSnippet UI - Pro",
         icon: <LayoutGrid className="h-4 w-4 text-blue-500" />,
         description: "Components",
         short: "",
