@@ -3,8 +3,7 @@
 import { cn } from "@/lib/utils";
 import {
     CheckCircle,
-    Clock,
-    Star,
+   
     TrendingUp,
     Video,
     Globe,

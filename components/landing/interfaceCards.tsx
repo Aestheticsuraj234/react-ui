@@ -54,7 +54,7 @@ export function BuildInterfacesCard({ className }: BuildInterfacesCardProps) {
                     </Link>
 
                     <Link
-                        href="https://github.com/kokonut-labs/codesnippetui"
+                        href="#"
                         target="_blank"
                         className="group inline-flex items-center gap-2 px-6 py-3 rounded-lg
                             border border-zinc-200 dark:border-zinc-800

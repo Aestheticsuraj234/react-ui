@@ -21,11 +21,13 @@ import { Btn14 } from "../codesnippetui/button/btn-14";
 import Btn03 from "../codesnippetui/button/btn-03";
 import Input09 from "../codesnippetui/input/input-09";
 import AIInput_04 from "../codesnippetui/ai-input/ai-input-04";
-import ActionSearchBar from "../codesnippetui/action-search-bar";
+
 import Card08 from "../codesnippetui/card/card-08";
 import { BrowseBlocksButton } from "../ui/browse-blocks";
 import { BrowseComponentsButton } from "../ui/browse-button";
 import Features from "./feature-block";
+
+import Card02 from "../codesnippetui/card/card-02";
 
 interface Action {
   id: string;
@@ -36,48 +38,7 @@ interface Action {
   end?: string;
 }
 
-const allActions: Action[] = [
-  {
-    id: "1",
-    label: "Book tickets",
-    icon: <PlaneTakeoff className="h-4 w-4 text-emerald-500" />,
-    description: "Operator",
-    short: "⌘K",
-    end: "Agent",
-  },
-  {
-    id: "2",
-    label: "Summarize",
-    icon: <BarChart2 className="h-4 w-4 text-pink-500" />,
-    description: "gpt-4o",
-    short: "⌘cmd+p",
-    end: "Command",
-  },
-  {
-    id: "3",
-    label: "Screen Studio",
-    icon: <Video className="h-4 w-4 text-purple-500" />,
-    description: "gpt-4o",
-    short: "",
-    end: "Application",
-  },
-  {
-    id: "4",
-    label: "Talk to Jarvis",
-    icon: <AudioLines className="h-4 w-4 text-pink-500" />,
-    description: "DeepSeek",
-    short: "",
-    end: "Active",
-  },
-  {
-    id: "5",
-    label: "Translate",
-    icon: <Globe className="h-4 w-4 text-emerald-500" />,
-    description: "Gemini",
-    short: "",
-    end: "Command",
-  },
-];
+
 
 export function HeroSection() {
   return (
@@ -136,10 +97,7 @@ export function HeroSection() {
             <BrowseComponentsButton />
             <BrowseBlocksButton />
           </div>
-
         </motion.div>
-
-
 
         <Features />
       </div>
@@ -155,22 +113,23 @@ export function HeroSection() {
         >
           {/* Card component */}
           <div className="w-full flex flex-col items-center justify-center ">
-                        <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
-                            {"<Card/>"}
-                        </span>
-                        <Card08 href="/docs/components/card" />
-                    </div>
+            <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
+              {"<Card/>"}
+            </span>
+            <Card08 href="/docs/components/card" />
+          </div>
 
           {/* Action Search Bar */}
-          <div className="w-full bg-transparent">
-                        <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
-                            Components
-                        </span>
-                        <ActionSearchBar
+          <div className="w-full max-w-[600px] bg-transparent">
+            <span className="text-sm text-zinc-500 dark:text-zinc-400 block text-center mb-2">
+              Components
+            </span>
+            {/* <ActionSearchBar
                             actions={allActions}
                             defaultOpen={true}
-                        />
-                    </div>
+                        /> */}
+            <Card02 />
+          </div>
         </motion.div>
 
         {/* Middle row: AI Chat */}
@@ -185,7 +144,7 @@ export function HeroSection() {
           </span>
           {/* <AIInput_04 /> */}
           <div className="w-full h-48 rounded-xl border border-zinc-200 dark:border-zinc-800 flex items-center justify-center">
-          <AIInput_04 />
+            <AIInput_04 />
           </div>
         </motion.div>
 

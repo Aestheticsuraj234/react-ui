@@ -100,6 +100,7 @@ export const navigationSections: NavSection[] = [
                 href: "/docs/components/text",
                 description: "Typography and text animation components",
                 count: 6,
+                isNew: true,
             },
         ],
     },

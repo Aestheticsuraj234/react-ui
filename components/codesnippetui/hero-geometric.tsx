@@ -160,7 +160,7 @@ export default function HeroGeometric({
                         className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
                     >
                         <Image
-                            src="https://codesnippetui.com/logo.svg"
+                            src="https://ui.codesnipet.dev/logo.svg"
                             alt="CodeSnippet UI"
                             width={20}
                             height={20}

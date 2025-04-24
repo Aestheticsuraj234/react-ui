@@ -52,7 +52,7 @@ export function TopBar({ cartItemCount, onCartClick, onSearch }: TopBarProps) {
         >
             <div className="flex items-center justify-between px-3 h-12">
                 <Link
-                    href="https://codesnippetui.com/"
+                    href="https://ui.codesnipet.dev/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-sm font-medium shrink-0"

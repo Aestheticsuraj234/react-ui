@@ -24,14 +24,14 @@ export function HeaderPro() {
     if (random < 0.75) {
       setContent({
         text: "Built app fast",
-        productName: "Kokonut Boilerplate",
-        link: "https://kokonut.dev?utm_source=codesnippetui.com&utm_medium=header",
+        productName: "CodeSnippet Boilerplate",
+        link: "#",
       });
     } else {
       setContent({
         text: "Explore new components",
         productName: "CodeSnippet UI Pro",
-        link: "https://codesnippetui.pro?utm_source=codesnippetui.com&utm_medium=header",
+        link: "#",
       });
     }
   }, []);
@@ -42,26 +42,26 @@ export function HeaderPro() {
         <Link
           href={content.link}
           target="_blank"
-          className="flex items-center justify-end gap-2 pl-2 pr-0.5 py-1 text-sm font-medium text-zinc-800 dark:text-zinc-200 rounded-xl border-2 border-orange-500/20 hover:border-orange-500/60 transition-all duration-300 group hover:shadow-md"
+          className="flex items-center justify-end gap-2 pl-2 pr-0.5 py-1 text-sm font-medium text-zinc-800 dark:text-zinc-200 rounded-xl border-2 border-fuchsia-500/20 hover:border-fuchsia-500/60 transition-all duration-300 group hover:shadow-md"
         >
           <span className="hidden md:flex items-center gap-2">
             {content.productName === "CodeSnippet UI Pro" ? (
-              <ConfettiOutline className="w-4 h-4 text-orange-500" />
+              <ConfettiOutline className="w-4 h-4 text-fuchsia-500" />
             ) : (
-              <Rocket className="w-4 h-4 text-orange-500" />
+              <Rocket className="w-4 h-4 text-fuchsia-500" />
             )}
-            <span className="text-transparent bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 bg-clip-text font-semibold tracking-tighter">
+            <span className="text-transparent bg-gradient-to-r from-fuchsia-500 via-purple-500 to-fuchsia-600 bg-clip-text font-semibold tracking-tighter">
               {content.text}
             </span>
           </span>
 
           <span className="flex md:hidden items-center gap-2">
             {content.productName === "CodeSnippet UI Pro" ? (
-              <PartyPopper className="w-4 h-4 text-orange-500" />
+              <PartyPopper className="w-4 h-4 text-fuchsia-500" />
             ) : (
-              <Rocket className="w-4 h-4 text-orange-500" />
+              <Rocket className="w-4 h-4 text-fuchsia-500" />
             )}
-            <span className="text-transparent bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 bg-clip-text font-semibold">
+            <span className="text-transparent bg-gradient-to-r from-fuchsia-500 via-purple-500 to-fuchsia-600 bg-clip-text font-semibold">
               {content.text.split(" ")[0]}
             </span>
           </span>
@@ -76,7 +76,7 @@ export function HeaderPro() {
           </div>
         </Link>
         <Link
-          href="https://github.com/kokonut-labs/codesnippetui"
+          href="#"
           target="_blank"
           className="hidden group relative md:inline-flex items-center gap-2 px-1.5 py-1.5 text-sm rounded-lg bg-zinc-900 dark:bg-zinc-100 transition-colors hover:bg-zinc-800 dark:hover:bg-zinc-200"
         >
@@ -92,7 +92,7 @@ export function HeaderPro() {
           </div>
         </Link>
         <Link
-          href="https://x.com/dorian_baffier"
+          href="#"
           target="_blank"
           className="hidden group relative md:inline-flex items-center gap-2 px-1.5 py-1.5 text-sm rounded-lg bg-zinc-900 dark:bg-zinc-100 transition-colors hover:bg-zinc-800 dark:hover:bg-zinc-200"
         >
