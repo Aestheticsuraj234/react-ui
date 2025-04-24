@@ -5,26 +5,25 @@ import { Flame } from "lucide-react";
 import Image from "next/image";
 
 export const baseOptions: BaseLayoutProps = {
-    nav: {
-        title: (
-            <div className="flex items-center">
-                
-            <Flame className="mr-2 h-5 w-5 text-green-600" />
-                <span className="hidden md:inline-flex items-center text-lg font-bold tracking-tight text-black dark:text-white">
-                    CodeSnippetUI
-                </span>
-            </div>
-        ),
+  nav: {
+    title: (
+      <div className="flex items-center">
+        <Flame className="mr-2 h-5 w-5 text-green-600" />
+        <span className="hidden md:inline-flex items-center text-lg font-bold tracking-tight text-black dark:text-white">
+          CodeSnippetUI
+        </span>
+      </div>
+    ),
+  },
+  links: [
+    {
+      text: "Pricing",
+      url: "/pricing",
     },
-    links: [
-        {
-            text: "Pricing",
-            url: "/pricing",
-        },
-       
-        {
-            type: "custom",
-            children: <HeaderPro />,
-        },
-    ],
+
+    {
+      type: "custom",
+      children: <HeaderPro />,
+    },
+  ],
 };
