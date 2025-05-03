@@ -53,3 +53,4 @@ export async function generateMetadata(props: {
         description: page.data.description,
     };
 }
+

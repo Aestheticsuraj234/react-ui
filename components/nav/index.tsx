@@ -33,6 +33,9 @@ export default function ComponentNav({ sections }: ComponentNavProps) {
             if (item.href.includes("/docs/components/")) {
                 return pathname === item.href;
             }
+            if(item.href.includes("/docs/hooks")){
+                return pathname === item.href
+            }
             return pathname === item.href;
         });
 

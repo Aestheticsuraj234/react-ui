@@ -109,8 +109,8 @@ export const navigationSections: NavSection[] = [
         items: [
             {
                 id: 1,
-                title: "Custom Hooks",
-                href: "/docs/hooks",
+                title: "useAutoResizeTextarea",
+                href: "/docs/hooks/useAutoResizeTextarea",
             },
         ],
     },

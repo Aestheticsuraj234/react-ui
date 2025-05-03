@@ -39,6 +39,11 @@
         "components/input",
         "components/list",
         "components/profile",
-        "components/text"
+        "components/text",
+        "---Hooks---",
+        "hooks/use-tags",
+        "hooks/use-click-outside",
+        "hooks/use-auto-resize-textarea",
+        "hooks/use-file-input"
     ]
 }
